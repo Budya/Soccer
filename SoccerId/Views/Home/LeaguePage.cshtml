@@ -1,0 +1,78 @@
+﻿@{
+    ViewBag.Title = "Персональная страница капитана Лиги ";
+}
+
+<h2>@ViewBag.Title.</h2>
+
+<style>
+    img {
+        border-radius: 50%;
+    }
+
+    #total {
+        /*border-radius: 2%;*/
+        background-color: cadetblue;
+    }
+
+    #left {
+        margin-top: 6px;
+        margin-bottom: 6px;
+        /*margin-left: 6px;
+        margin-right: 3px;*/
+        border: 2px solid #8b8e4b;
+        border-radius: 5%;
+        /*border-spacing: 3px;*/
+    }
+
+    #cent {
+        margin-top: 6px;
+        margin-bottom: 6px;
+        /*margin-left: 3px;
+        margin-right: 3px;*/
+        border: 2px solid #8b8e4b;
+        border-radius: 4%;
+        /*border-spacing: 3px;*/
+    }
+
+    #right {
+        margin-top: 6px;
+        margin-bottom: 6px;
+        /*margin-left: 3px;
+        margin-right: 6px;*/
+        border: 2px solid #8b8e4b;
+        border-radius: 5%;
+        /*border-spacing: 3px;*/
+    }
+</style>
+
+<div class="container">
+    <div id="total" class="row">
+        <div class="col-md-3">
+            <div id="left">
+                <p>
+                    <img src="~/Content/Image/Fireball.jpg" width="200" height="200">
+                </p>
+                @*<p><a class="btn btn-default" href=""><< >> &raquo;</a></p>*@
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div id="cent">
+                <h2>Чат</h2>
+
+                @*<p><a class="btn btn-default" href=""><< >> &raquo;</a></p>*@
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div id="right">
+                <h2>Составление матчей</h2>
+                <div class="col-md-6">
+
+                </div>
+                <div class="col-md-6">
+
+                </div>
+            </div>
+            @*<p><a class="btn btn-default" href=""><< >> &raquo;</a></p>*@
+        </div>
+    </div>
+</div>

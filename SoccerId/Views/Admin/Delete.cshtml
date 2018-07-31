@@ -1,0 +1,29 @@
+﻿@model SoccerId.Models.DeleteModel
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+
+
+
+
+<div class="panel panel-danger text-danger">
+    <div class="panel-heading">
+        <h3>Вы действительно хотите удалить аккаунт?</h3>
+        @*<dl class="dl-horizontal"></dl>*@
+        <table class="table-bordered text-danger"></table>
+
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+
+
+            <div class="form-actions form-inline">
+                <input type="submit" value="Удалить" class="btn btn-danger text-white" /> |
+                @Html.ActionLink("Назад", "AdminIndex", "Admin")
+            </div>
+        }
+    </div>
+</div>

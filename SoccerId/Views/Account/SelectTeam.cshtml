@@ -1,0 +1,38 @@
+﻿
+@model IEnumerable<SoccerId.Entities.Team>
+
+<style>
+    p {
+        color: red;
+        margin: 4px;
+    }
+
+    b {
+        color: blue;
+    }
+</style>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+@using (Html.BeginForm())
+{
+    @Html.DropDownList("Teams", ViewBag.Teams as SelectList, "Выбор команды");
+    @*<input type="hidden" name="selItem1" id="teamValues" />*@
+}
+
+
+
+@*<p></p>
+
+<script>
+    function displayVals() {
+        var teamValues = $("#Teams").val();
+
+        //alert(teamValues.toString());
+        $("p").html("<b>Вы выбрали:</b> " + teamValues);
+    }
+    $("select").change(displayVals);
+    document.getElementById("teamValuesQ").value = teamValues;
+    displayVals();
+
+</script>*@
+
